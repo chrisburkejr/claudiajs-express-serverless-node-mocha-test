@@ -18,12 +18,18 @@ npm run create-int
 
 npm run create-prod
 
+
+https://github.com/claudiajs/claudia/blob/master/docs/create.md
+
 ## Update
 npm run update-qa
 
 npm run update-int
 
 npm run update-prod
+
+
+https://github.com/claudiajs/claudia/blob/master/docs/update.md
 
 ## Test
 npm test
