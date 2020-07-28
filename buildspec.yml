@@ -1,0 +1,13 @@
+version: 1.0
+
+phases:
+    install:
+        runtime-versions:
+           nodejs: 10
+    build:
+        commands:
+            - echo Installing source NPM dependencies...
+            - npm i -g claudia
+            - npm i
+            - echo Build started on `date`
+            - npm run update-prod
