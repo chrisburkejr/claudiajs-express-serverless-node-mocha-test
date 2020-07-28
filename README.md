@@ -15,14 +15,18 @@ npm run dev
 npm run create-qa
 
 npm run create-int
+
 npm run create-prod
 
 # Update
 npm run update-qa
+
 npm run update-int
+
 npm run update-prod
 
 # Test
 npm test
+
 
 *Make sure to create a name.spec.ts file for the router you want to test
