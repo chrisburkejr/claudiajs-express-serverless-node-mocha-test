@@ -1,4 +1,4 @@
-# Simple serverless example with Claudia JS
+# Simple Boiler Plate - Claudia JS
 
 Example Express server that can be deployed to AWS Lambda using Claudia.js. 
 For an explanation of the code, and how to deploy, check out [this tutorial]
