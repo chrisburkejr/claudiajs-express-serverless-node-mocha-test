@@ -1,13 +1,17 @@
-version: 1.0
+version: 0.2
 
 phases:
     install:
         runtime-versions:
            nodejs: 10
+    commands:
+        - echo Installing Mocha...
+        - npm install -g mocha
     build:
         commands:
             - echo Installing source NPM dependencies...
             - npm i -g claudia
             - npm i
+            - npm test
             - echo Build started on `date`
             - npm run update-prod

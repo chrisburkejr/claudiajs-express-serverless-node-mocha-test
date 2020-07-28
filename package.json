@@ -9,9 +9,9 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --respawn --transpile-only ./src/local.ts",
     "copy-assets": "cp -rv assets dist/assets/",
-    "create-qa": "tsc && claudia create --runtime nodejs12.x --handler dist/lambda.handler --deploy-proxy-api --region us-east-1 --memory 1600 --timeout 90 --use-s3-bucket someDeploymentBucket --version prod --role someRole",
-    "create-int": "tsc && claudia create --runtime nodejs12.x --handler dist/lambda.handler --deploy-proxy-api --region us-east-1 --memory 1600 --timeout 90 --use-s3-bucket someDeploymentBucket --version prod --role someRole",
-    "create-prod": "tsc && claudia create  --runtime nodejs12.x --handler dist/lambda.handler --deploy-proxy-api --region us-east-1 --memory 1600 --timeout 90 --use-s3-bucket someDeploymentBucket --version prod --role someRole",
+    "create-qa": "tsc && claudia create --runtime nodejs12.x --handler dist/lambda.handler --deploy-proxy-api --region us-east-1 --version qa --role arn:aws:iam::SOMEROME",
+    "create-int": "tsc && claudia create --runtime nodejs12.x --handler dist/lambda.handler --deploy-proxy-api --region us-east-1 --version int --role arn:aws:iam::SOMEROME",
+    "create-prod": "tsc && claudia create  --runtime nodejs12.x --handler dist/lambda.handler --deploy-proxy-api --region us-east-1 --version prod --role arn:aws:iam::SOMEROME",
     "update-qa": "tsc && npm run copy-assets && claudia update --version qa",
     "update-int": "tsc && npm run copy-assets && claudia update --version int",
     "update-prod": "tsc && npm run copy-assets && claudia update --version prod",
