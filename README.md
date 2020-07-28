@@ -8,24 +8,24 @@ For an explanation of the code, and how to deploy, check out [this tutorial]
 If you DO NOT have aws creds locally.
 https://claudiajs.com/tutorials/installing.html
 
-# Run Dev
+## Run Dev
 npm run dev
 
-# Create
+## Create
 npm run create-qa
 
 npm run create-int
 
 npm run create-prod
 
-# Update
+## Update
 npm run update-qa
 
 npm run update-int
 
 npm run update-prod
 
-# Test
+## Test
 npm test
 
 
