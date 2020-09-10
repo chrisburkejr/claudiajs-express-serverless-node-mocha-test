@@ -1,4 +1,4 @@
-import { testRouter } from './routes/test/testRouter';
+import { testRouter } from './routes/test/test-router';
 import express, {Request, Response} from 'express';
 import bodyParser from 'body-parser';
 
