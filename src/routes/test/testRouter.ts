@@ -1,6 +1,6 @@
 const { Router } = require('express');
-export const testRouter = Router();
+import { Request, Response } from 'express';
 
-testRouter.get('/test', (req: any, res: any) => {
+export const testRouter = Router().get('/test', (req: Request, res: Response) => {
     res.send('Hello');
 });
